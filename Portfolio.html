@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-5HnElB1cLLz6JYgF9fAPQvGDB/2g52j47oT2JZW2b5TXlb9PzKv2C2clYeD6gkJt7XucbPXhMsb1Z5MKmiLhmg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <header class="hero-section">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo2.jpeg" alt="Logo" style="height: 40px;">
+            </div>
+            <div class="hamburger" id="hamburger">
+                &#9776; <!-- Unicode character for hamburger icon -->
+            </div>
+            
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About Us</a></li>
+                <li><a href="./Portfolio.html">Portfolio</a></li>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+            <div class="icon-buttons">
+                <a href="#" class="icon"><i class="fas fa-search"></i></a>
+                <a href="#" class="icon"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </nav>
+        <div class="hero-content">
+           
+            <h1 class="main-heading">PORTFOLIO</h1>
+            
+        </div>
+    </header>
+    <!-- Category Links -->
+    <div class="categories">
+      <a href="#all" class="active" onclick="filterGallery('all')">All</a>
+      <a href="#burger" onclick="filterGallery('Burger')">Burger</a>
+      <a href="#dessert" onclick="filterGallery('Dessert')">Dessert</a>
+      <a href="#fast-food" onclick="filterGallery('Fast Food')">Fast Food</a>
+  </div>
+
+  <!-- Gallery Grid -->
+  <div class="gallery" id="gallery">
+      <!-- Each gallery item represents a food image and title -->
+      <div class="gallery-item" data-category="Fast Food">
+          <img src="footer 1.jpeg" alt="Italian Fast Food">
+          <div class="item-info">
+              <p class="item-title">Italian Fast Food</p>
+              <p class="item-category">Fast Food</p>
+          </div>
+        
+      </div>
+      
+      <div class="gallery-item" data-category="Fast Food">
+          <img src="footer 2.jpeg" alt="Sweet Snacks">
+          <div class="item-info">
+              <p class="item-title">Sweet Snacks</p>
+              <p class="item-category">Fast Food</p>
+          </div>
+        
+      </div>
+
+      <div class="gallery-item" data-category="Burger">
+          <img src="footer 3.jpeg" alt="Fast Made Meal">
+          <div class="item-info">
+              <p class="item-title">Fast Made Meal</p>
+              <p class="item-category">Burger</p>
+          </div>
+  
+      </div>
+
+      <div class="gallery-item" data-category="Burger">
+          <img src="footer 4.jpeg" alt="Delicious Cheeseburger">
+          <div class="item-info">
+              <p class="item-title">Delicious Cheeseburger</p>
+              <p class="item-category">Burger</p>
+          </div>
+    
+      </div>
+
+      <div class="gallery-item" data-category="Dessert">
+          <img src="footer 5.jpeg" alt="Chocolate Cake">
+          <div class="item-info">
+              <p class="item-title">Chocolate Cake</p>
+              <p class="item-category">Dessert</p>
+          </div>
+         
+      </div>
+
+      <div class="gallery-item" data-category="Healthy">
+          <img src="footer 6.jpeg" alt="Fresh Salad">
+          <div class="item-info">
+              <p class="item-title">Fresh Salad</p>
+              <p class="item-category">Healthy</p>
+          </div>
+       
+      </div>
+
+      <div class="gallery-item" data-category="Japanese">
+          <img src="footer 3.jpeg" alt="Tasty Sushi">
+          <div class="item-info">
+              <p class="item-title">Tasty Sushi</p>
+              <p class="item-category">Japanese</p>
+          </div>
+     
+      </div>
+
+      <div class="gallery-item" data-category="Italian">
+          <img src="footer 1.jpeg" alt="Spaghetti Bolognese">
+          <div class="item-info">
+              <p class="item-title">Spaghetti Bolognese</p>
+              <p class="item-category">Italian</p>
+          </div>
+
+      </div>
+
+      <div class="gallery-item" data-category="Main Course">
+          <img src="footer 4.jpeg" alt="Grilled Chicken">
+          <div class="item-info">
+              <p class="item-title">Grilled Chicken</p>
+              <p class="item-category">Main Course</p>
+          </div>
+       
+      </div>
+
+      <div class="gallery-item" data-category="Healthy">
+          <img src="footer 2.jpeg" alt="Fruit Salad">
+          <div class="item-info">
+              <p class="item-title">Fruit Salad</p>
+              <p class="item-category">Healthy</p>
+          </div>
+ 
+      </div>
+
+      
+  </div>
+
+  <!-- Show More Button -->
+  <div class="show-more">
+      <button>Show More</button>
+  </div>
+<!-- Content Section -->
+<!-- Content Section -->
+<section class="burger-section">
+  <div class="burger-image">
+      <img src="burger main.jpeg" alt="Favorite Burger">
+  </div>
+  <div class="burger-info">
+      <p class="food-category">FAST FOOD</p>
+      <h1 class="burger-title">Favorite Burger</h1>
+      <p class="burger-description">On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of will, which is the same as saying through shrinking from toil and pain.</p>
+      <p class="burger-date">Date: April 8, 2016</p>
+      <p class="burger-tags">Tags: Burger, Food</p>
+      <div class="social-share">
+          <p class="share-text">Share:</p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.pinterest.com" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        </div>
+          <div class="like-counter">
+              <span class="like-heart">&#9829;</span> 26 LIKE
+          </div>
+      </div>
+  </div>
+</section>
+ 
+    <hr>
+
+    <footer class="footer">
+        <div class="footer-column twitter-feed">
+            <h3>TWITTER FEED</h3>
+            <p>For all the latest news and updates, follow us on Twitter: @QodeInteractive.com</p>
+        </div>
+        <div class="footer-column contact-info">
+            <img src="logo2.jpeg" alt="Signature">
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque.</p>
+            <p>+387648592568</p>
+            <p>savory@qodeinteractive.com</p>
+            <p>Eighth Avenue 487, New York</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.pinterest.com" target="_blank" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+        <div class="footer-column follow-me">
+            <h3>FOLLOW ME</h3>
+            <div class="food-images">
+                <img src="footer 1.jpeg" alt="Food 1">
+                <img src="footer 2.jpeg" alt="Food 2">
+                <img src="footer 3.jpeg" alt="Food 3">
+                <img src="footer 4.jpeg" alt="Food 4">
+                <img src="footer 5.jpeg" alt="Food 5">
+                <img src="footer 6.jpeg" alt="Food 6">
+            </div>
+        </div>
+        
+    </footer>
+    <button id="back-to-top" class="back-to-top" title="Back to Top">&uarr;</button>
+
+    <div class="footer-bottom">
+        <p>© 2016 Qode Interactive, All Rights Reserved</p>
+    </div>
+    <script>
+        // JavaScript to toggle the side navigation
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+        // Get the button
+const backToTopButton = document.getElementById('back-to-top');
+
+// Show the button when scrolling down 200px from the top of the document
+window.onscroll = function() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        backToTopButton.style.display = 'block';
+    } else {
+        backToTopButton.style.display = 'none';
+    }
+};
+
+// Scroll to the top when the button is clicked
+backToTopButton.onclick = function() {
+    window.scrollTo({top: 0, behavior: 'smooth'}); // Smooth scroll to top
+};
+function filterGallery(category) {
+          const items = document.querySelectorAll('.gallery-item');
+          const links = document.querySelectorAll('.categories a');
+
+          items.forEach(item => {
+              if (category === 'all' || item.getAttribute('data-category') === category) {
+                  item.style.display = 'block';
+              } else {
+                  item.style.display = 'none';
+              }
+          });
+
+          // Update active link
+          links.forEach(link => {
+              if (link.getAttribute('href').substring(1) === category || (category === 'all' && link.classList.contains('active'))) {
+                  link.classList.add('active');
+              } else {
+                  link.classList.remove('active');
+              }
+          });
+      }
+
+    </script>
+</body>
+</html>
